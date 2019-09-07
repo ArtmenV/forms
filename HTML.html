@@ -15,12 +15,20 @@
   <body>
     <div class="dws-wrapper">
       <div class="dws-form">
-        <label class="tab active" title="Вкладка 1">Авторизация</label>
-        <label class="tab" title="Вкладка 2">Регистрация</label>
+        <!-- Вкладки на CSS -->
+        <input type="radio" id="tab-1" name="tabs" checked />
+        <label class="tab" for="tab-1" title="Вкладка 1">Авторизация</label>
+
+        <input type="radio" name="tabs" id="tab-2" />
+        <label class="tab" for="tab-2" title="Вкладка 2">Регистрация</label>
+
+        <!-- Вкладки на JS -->
+        <!--<label class="tab active" title="Вкладка 1">Авторизация</label>-->
+        <!--<label class="tab " title="Вкладка 2">Регистрация</label>-->
 
         <form class="tab-form">
-          <input type="email" placeholder="Введите email" />
-          <input type="password" placeholder="Введите пароль" />
+          <input class="tab" type="email" placeholder="Введите E-mail" />
+          <input class="tab" type="password" placeholder="Введите пароль" />
           <a href="#" class="button">Войти</a>
           <ul>
             <li>
@@ -43,16 +51,16 @@
         </form>
 
         <form class="tab-form del">
-          <input type="email" placeholder="Введите email адрес" />
+          <input type="email" placeholder="Введите E-mail адрес" />
           <input type="text" placeholder="Введите свое имя" />
-          <input type="text" placeholder="Введите пароль" />
+          <input type="password" placeholder="Введите пароль" />
           <a href="#" class="button">Регистрация</a>
 
           <div class="recover">
             <input type="checkbox" />
             <label
               >Ознакомлен(-а) и принимаю
-              <a href="#">Условия регистрации</a></label
+              <a href="#">условия регистрацииусловия регистрации</a></label
             >
           </div>
         </form>
